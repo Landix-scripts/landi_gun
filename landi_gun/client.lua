@@ -1,6 +1,3 @@
--- =========================
--- SETTINGS
--- =========================
 local recoilTable = {
     [`WEAPON_PISTOL`] = 0.07,
     [`WEAPON_COMBATPISTOL`] = 0.08,
@@ -13,9 +10,6 @@ local recoilTable = {
 
 local isLowReady = false
 
--- =========================
--- REALISTIC RECOIL (SAFE)
--- =========================
 CreateThread(function()
     while true do
         Wait(0)
@@ -32,9 +26,6 @@ CreateThread(function()
     end
 end)
 
--- =========================
--- VEHICLE AIM = FIRST PERSON
--- =========================
 CreateThread(function()
     while true do
         Wait(0)
@@ -51,9 +42,6 @@ CreateThread(function()
     end
 end)
 
--- =========================
--- LOW READY (RUN)
--- =========================
 CreateThread(function()
     while true do
         Wait(120)
@@ -75,9 +63,6 @@ CreateThread(function()
     end
 end)
 
--- =========================
--- AIM CAMERA (LIGHT ZOOM)
--- =========================
 CreateThread(function()
     while true do
         Wait(0)
@@ -94,9 +79,6 @@ CreateThread(function()
     end
 end)
 
--- =========================
--- VERY LIGHT AIM SWAY
--- =========================
 CreateThread(function()
     while true do
         Wait(200)
